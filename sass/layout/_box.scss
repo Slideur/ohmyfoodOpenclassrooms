@@ -1,0 +1,21 @@
+.box {
+    position: relative;
+    width: 82rem;
+    margin: auto;
+
+    @media(max-width: 320px) {
+        width: 20rem;
+    }
+    @media (min-width: 321px) and (max-width: 424px) {
+        width: 23.5rem;
+    }
+    @media (min-width: 425px) and (max-width: 767px) {
+        width: 26.563rem;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        width: 48rem;
+    }
+    @media(min-width: 1024px) and (max-width: 1440px) {
+        width: 64rem;
+    }
+}

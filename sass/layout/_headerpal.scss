@@ -1,0 +1,88 @@
+.headerpal {
+    position: absolute;
+    bottom: 87%;
+    left: 0%;
+    width: 82rem;
+    background-color: #F6F6F6;
+    border-radius: 3rem 3rem 0 0;
+    
+    @media (max-width:320px) {
+        width: 20rem;
+    }
+     @media (min-width: 321px) and (max-width: 424px) {
+         width: 23.5rem;
+    }
+    @media (min-width: 425px) and (max-width: 767px) {
+        width: 26.563rem;
+    }
+     
+    @media(min-width:768px) and (max-width: 1023px) {
+          width: 48rem;
+    }
+    @media(min-width: 1024px) and (max-width: 1440px) {
+        width: 64rem;
+    }
+    
+    
+    &__image {
+        width: 100%;
+        max-width: 100%;
+        height: 32rem;
+        background-size: cover;
+        @media (max-width:320px) {
+            width: 100%;
+            height: 13.34rem;
+        }
+         @media (min-width: 321px) and (max-width: 767px) {
+             width: 100%;
+             height: 100%;
+         }
+         @media (min-width: 768px) and (max-width: 1023px) {
+             width: 48rem;
+             height: 32rem;
+         }
+    }
+
+    &__menu {
+        padding: 3rem;
+        padding-top: 0.6rem;
+        
+            .fa-solid {
+                color: transparent;
+                background-color: white;
+                background-image:linear-gradient(to top, rgba(147,86,220,.9),rgba(255,121,218,.9));
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 0;
+                transition: all 250ms ease-in-out;
+            }
+                .fa-solid:hover{
+                    opacity: 1;
+                }
+         
+        @media(min-width:768px) and (max-width: 1024px) {
+            width: 48rem;
+        }
+        
+        .headerpal__title {
+            position: absolute;
+            left: 2%;
+            width: 14rem;
+            margin-bottom: 0;
+        }
+        .header__title--note {
+            width: 15rem;
+            }
+
+        i {
+            position: absolute;
+            font-size: 2rem;
+            right: 3%;
+            top: 60%;
+        }
+    }
+}
+
+
+
+

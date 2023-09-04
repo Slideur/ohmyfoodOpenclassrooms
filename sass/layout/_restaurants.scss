@@ -1,0 +1,235 @@
+@use "../utils/variables";
+
+
+body {
+    position: relative;
+}
+
+.ball {
+    z-index: 2;
+    position: absolute;
+    animation: ball 1000ms;
+    opacity: 1;
+    top: 30%;
+    left: 47%;
+}
+
+.restaurants {
+    
+    padding: variables.$padding-section;
+    background-color: #f6f6f6;
+    margin-left: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @media (max-width: 320px) {
+        padding: 0;
+        padding-left:1rem;
+    }
+    
+    @media (max-width: 768px) {
+        padding-left: 0.5rem;
+         
+    }
+    @media(min-width: 1024px) and (max-width: 1440px) {
+        padding: 1rem;
+    }
+    @media(width: 1440px) {
+        padding-left: 5rem;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 39rem);
+        grid-template-rows: repeat(2, 16.875rem);
+        gap: 2rem;
+        @media (max-width: 320px) {
+            grid-template-columns: 18rem;
+            grid-template-rows:repeat(4, 16.875rem);
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+        @media(min-width: 1024px) and (max-width: 1440px) {
+            grid-template-columns: repeat(2, 30rem);
+        }
+        @media(width: 1440px) {
+            grid-template-columns: repeat(2, 39rem);
+        }
+    }
+
+        &--palette {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            @media (max-width: 320px) {
+                width: 100%;
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;  
+            }
+        }
+
+        &--note {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            @media (max-width: 320px) {
+                width: 18rem;
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;  
+            }
+        }
+
+        &--france {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            @media (max-width: 320px) {
+                width: 18rem;
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;  
+            }
+        }
+
+        &--sens {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            @media (max-width: 320px) {
+                width: 18rem;
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;  
+            }
+        }
+
+    &__cards--link  {
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+    }
+        
+    i {
+            
+        position: absolute;
+        font-size: 2rem;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }    
+        
+    h3 {
+        margin-bottom: 0.2rem;
+        margin-top: 0rem;
+        padding-top: 0.5rem;
+    }
+    
+    p {
+        margin-top: 0;
+    }
+
+    &__cards--text {
+        position: relative;
+        width: 39rem;
+        height: 4.875rem;
+        background-color: white;
+        padding-left: 1rem;
+        border-radius: 0 0 1rem 1rem;
+        @media (max-width: 320px) {
+            width: 18rem;
+        }
+        @media(min-width: 321px) and (max-width: 425px) {
+            width: 25rem;
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+            width: 46rem;
+        }
+        @media(min-width: 1024px) and (max-width: 1440px) {
+            width: 30rem;
+        }
+        @media(width: 1440px) {
+            width: 39rem;
+        }
+ 
+
+        .fa-solid {
+            color: transparent;
+            background-color: white;
+            background-image:linear-gradient(to top, rgba(147,86,220,.9),rgba(255,121,218,.9));
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            transition: all 250ms ease-in-out;
+        }
+
+        .fa-solid:hover{
+            opacity: 1;
+        }
+}
+      
+    img {
+        border-radius: 1rem 1rem 0 0;
+        @media (max-width: 320px) {
+            width: 18rem;
+            border-radius: 1rem 1rem 0 0;
+        }
+        @media(min-width: 321px) and (max-width: 425px) {
+            width: 25rem;
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+            width: 46rem;
+        }
+        @media(min-width: 1024px) and (max-width: 1440px) {
+            width: 30rem;
+        }
+        @media(width: 1440px) {
+            width: 39rem;
+        }
+    }
+}
+
+
+
+    .restaurants__cards--palette, .restaurants__cards--note {
+        position: relative;
+    }
+
+    .flash {
+        position:absolute;
+        padding: 0.5rem;
+        background-color: #99e2d0;
+        left: 86%;
+        top: 6%;
+        color:#1b6150;
+        @media (max-width: 320px) {
+            left: 64%;
+        }
+        @media (min-width: 321px) and (max-width: 425px) {
+            left: 75%;
+        }
+        @media(min-width: 1024px) and (max-width: 1440px) {
+            left: 80%;
+        }
+        @media (min-width: 1440px) {
+            left: 85%;
+        }
+    }
+ 
+    .loader {
+        position: fixed;
+        background-color: #ffffff;
+        height: 100vh;
+        inset: 0;
+        z-index: 1;
+        opacity: 0.9;
+        animation: body 200ms 3000ms forwards;
+        transform-origin: top;
+    }
+
+    
+
+    
+    
+
+        
+    
+
+
+
+
+
+   

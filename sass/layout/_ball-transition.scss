@@ -1,0 +1,17 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+@use "../utils/keyframes";
+
+
+.menu__card {
+    @include mixins.slide;
+}
+
+.menu__card {
+    animation: wave 1002ms backwards ease-in-out alternate;
+    @for $i from 1 through variables.$num-card {
+        &--#{$i} {
+            animation-delay: variables.$anim-delay * $i;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.header {
+    &__logo {
+        text-align: center;
+    }
+    &__paris {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: #f3f3f3;
+        box-shadow: inset 0px 8px 7px -8px rgba(0,0,0,0.4);
+        margin-bottom: 0;
+    }
+}
+

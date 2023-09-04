@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+ .header {
+    &__logo{
+        font-family: 'Shrikhand', cursive;
+    }
+}
+
+.nav {
+    
+    &__reservation {
+        font-size: 1.5rem;
+    }
+    &__discovery {
+        font-weight: 300;
+    }
+    &__explorer {
+        font-size: 1.1rem;
+    }
+}
+
+footer {
+    h3 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.2rem;
+        font-weight:800;
+    }
+
+}
+a {
+    //font-family: 'Shrikhand', cursive;
+    font-style: normal;
+}
+
+.container {
+    padding-left: 2rem;
+}
+
+.headerpal {
+
+&__logo {
+    font-family: 'Shrikhand', cursive;
+    
+}
+
+&__title {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.5rem;
+}
+
+&__menu--heart {
+    font-size: 1.5rem;
+}
+}
+
+.arrow__left {
+    font-size: 1.5rem;
+}
+
+.order {
+    font-size: 1.1rem;
+}
+
+
+
+
+    

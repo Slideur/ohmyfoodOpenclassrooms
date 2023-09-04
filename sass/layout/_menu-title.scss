@@ -1,0 +1,15 @@
+.menu_title {
+    font-weight: normal;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.menu_title:after {
+    content: "";
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #99E2D0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

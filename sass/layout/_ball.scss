@@ -1,0 +1,35 @@
+@use "../utils/keyframes";
+
+.ball {
+    display: flex;
+    justify-content:space-around;
+    width: 6rem;
+    
+    &__rebound {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    animation: ball 500ms both infinite ease-in-out alternate;
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation-delay: 200 * $i + random(100)*15ms;
+            }
+        }
+        
+        &--1 {
+        background-color: #9356DC;
+        }
+
+        &--2 {
+        background-color: #FF79DA;
+        }
+
+        &--3 {
+        background-color: #99E2D0;
+        }        
+    }
+}
+
+
+
+
