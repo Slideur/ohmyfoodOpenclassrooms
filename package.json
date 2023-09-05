@@ -4,8 +4,10 @@
   "description": "Troisième projet du parcours \"Développeur web\" chez OpenClassroom. L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./main.scss:./css/style.css"
+    "sass": "sass --watch ./main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed"
   },
   "author": "Slider",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }
