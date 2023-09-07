@@ -223,6 +223,11 @@ body {
     padding-left: 1rem;
   }
 }
+@media (min-width: 321px) and (max-width: 375px) {
+  .restaurants {
+    width: 25rem;
+  }
+}
 @media (max-width: 768px) {
   .restaurants {
     padding-left: 0.5rem;
@@ -342,7 +347,12 @@ body {
     width: 18rem;
   }
 }
-@media (min-width: 321px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 375px) {
+  .restaurants__cards--text {
+    width: 23.438rem;
+  }
+}
+@media (min-width: 376px) and (max-width: 425px) {
   .restaurants__cards--text {
     width: 25rem;
   }
@@ -383,7 +393,12 @@ body {
     border-radius: 1rem 1rem 0 0;
   }
 }
-@media (min-width: 321px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 375px) {
+  .restaurants img {
+    width: 23.438rem;
+  }
+}
+@media (min-width: 376px) and (max-width: 767px) {
   .restaurants img {
     width: 25rem;
   }
@@ -421,7 +436,12 @@ body {
     left: 64%;
   }
 }
-@media (min-width: 321px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 424px) {
+  .flash {
+    left: 75%;
+  }
+}
+@media (width: 425px) {
   .flash {
     left: 75%;
   }
@@ -539,13 +559,13 @@ footer .container {
   animation: ball 500ms both infinite ease-in-out alternate;
 }
 .ball__rebound--1 {
-  animation-delay: 1160ms;
+  animation-delay: 350ms;
 }
 .ball__rebound--2 {
-  animation-delay: 1780ms;
+  animation-delay: 1900ms;
 }
 .ball__rebound--3 {
-  animation-delay: 1320ms;
+  animation-delay: 1815ms;
 }
 .ball__rebound--1 {
   background-color: #9356DC;
